@@ -1,69 +1,67 @@
 #nav-bar {
-    background-color: #28a745 !important;
-    padding: 16px 20px;
-  }
-  
+  background-color: #28a745 !important;
+  padding: 16px 20px;
+
   .navbar-nav {
     .nav-link,
     .navbar-toggler,
     .navbar-brand {
       color: white !important;
     }
-  }
-  
-  .icon {
-    color: white;
-    width: 20px;
-    margin-left: 10px;
-  }
-  
-  .navbar-nav {
+
     .nav-item {
       margin-left: 20px;
     }
   }
-  
-  .logo-text {
-    display: inline-block;
-    vertical-align: middle;
-    font-size: 1.2rem;
-    font-weight: 500;
-    line-height: 1.2;
-  }
-  
-  .fatecano-text {
-    font-size: 1rem;
-    font-weight: 500;
-    display: block;
-    color: #fff;
-  }
-  
-  .logo {
-    width: 30px;
-    margin-right: 10px;
-  }
-  
-  .content {
-    padding: 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
+}
+
+.icon {
+  color: white;
+  width: 20px;
+  margin-left: 10px;
+}
+
+.logo-text {
+  display: inline-block;
+  vertical-align: middle;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.fatecano-text {
+  font-size: 1rem;
+  font-weight: 600;
+  display: block;
+  color: #fff;
+}
+
+.logo {
+  width: 30px;
+  margin-right: 10px;
+}
+
+.content {
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
   .title-subtitle {
     text-align: left;
+
+    .title {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    .subtitle {
+      font-size: 1.25rem;
+      margin-bottom: 20px;
+    }
   }
-  
-  .title {
-    font-size: 2rem;
-    font-weight: bold;
-  }
-  
-  .subtitle {
-    font-size: 1.25rem;
-    margin-bottom: 20px;
-  }
-  
+
   .add-class-btn {
     background-color: #28a745;
     color: white;
@@ -71,73 +69,73 @@
     border-radius: 8px;
     height: 50px;
     align-self: flex-start;
-  
+
     &:hover {
       background-color: #218838;
     }
   }
-  
-  .term-card {
-    padding: 50px;
-    font-size: 1.75rem;
-    font-weight: bold;
-    background-color: #e0f7df;
-    border-radius: 8px;
-    cursor: pointer;
-    text-align: center;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease-in-out;
-  
-    &:hover {
-      background-color: #c1eac1;
-      box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15);
-      transform: scale(1.05);
-    }
+}
+
+.term-card {
+  padding: 50px;
+  font-size: 1.75rem;
+  font-weight: bold;
+  background-color: #e0f7df;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+
+  &:hover {
+    background-color: #c1eac1;
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15);
+    transform: scale(1.05);
   }
-  
-  .col-md-3 {
-    max-width: 300px;
-    min-width: 250px;
+}
+
+.col-md-3 {
+  max-width: 300px;
+  min-width: 250px;
+}
+
+@media (max-width: 768px) {
+  #nav-bar {
+    padding: 16px 10px;
   }
-  
-  @media (max-width: 768px) {
-    #nav-bar {
-      padding: 16px 10px;
-    }
-  
-    .content {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  
+
+  .content {
+    flex-direction: column;
+    align-items: flex-start;
+
     .add-class-btn {
       width: 100%;
     }
-  
-    .term-card {
-      margin-bottom: 20px;
-    }
-  
-    .col-md-3 {
-      max-width: 100%;
-    }
-  
-    .navbar-nav {
-      flex-direction: column;
-      margin-top: 10px;
-  
-      .nav-item {
-        margin-left: 0;
-        margin-bottom: 10px;
-      }
-    }
-  
-    .icon {
+  }
+
+  .term-card {
+    margin-bottom: 20px;
+  }
+
+  .col-md-3 {
+    max-width: 100%;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    margin-top: 10px;
+
+    .nav-item {
       margin-left: 0;
-    }
-  
-    .navbar-toggler {
-      margin-left: auto;
+      margin-bottom: 10px;
     }
   }
-  
+
+  .icon {
+    margin-left: 0;
+  }
+
+  .navbar-toggler {
+    margin-left: auto;
+  }
+}

@@ -103,13 +103,33 @@
     }
   }
   
-  .grupo-senha .icone {
+  .grupo-senha {
+    position: relative;
+    width: 100%;
+  }
+  
+  .input-senha {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .input-senha input {
+    width: 100%;
+    padding-right: 40px; /* espaço para o ícone */
+  }
+  
+  .input-senha .icone {
     position: absolute;
-    left: 90%;
-    top: 70%;
-    transform: translateY(-50%);
+    right: 10px;
+    cursor: pointer;
     color: #aaa;
   }
+  
+  .input-senha .icone i {
+    font-size: 18px;
+  }
+  
   
   button {
     width: 100%;

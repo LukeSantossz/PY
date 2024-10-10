@@ -1,24 +1,28 @@
 <div class="conteudo-login">
-    <div class="secao-imagem">
-      <img class="imagem-esquerda" src="assets/Login.svg" alt="Estudante lendo um livro com elementos científicos ao redor">
-    </div>
-    <div class="direita">
-      <form class="form-login">
-        <img class="logo" src="assets/Backpack.png" alt="Logo do Guia do Mochileiro Fatecano">
-        <h2>Guia do Mochileiro<br>Fatecano</h2>
-        <div class="grupo-formulario">
-          <p>E-mail</p>
-          <input placeholder="Digite seu e-mail">
-        </div>
-        <div class="grupo-formulario grupo-senha">
-          <p>Senha</p>
-          <span class="icone"><i class="fas fa-lock"></i></span>
-          <input placeholder="Digite sua senha">
-        </div>
-        <button type="submit">Entrar</button>
-        <div class="link-cadastro">
-          <span>Ainda não possui conta?</span><a routerLink="/register">Registre-se</a>
-        </div>
-      </form>
-    </div>
+  <div class="secao-imagem">
+    <img class="imagem-esquerda" src="/assets/Login.svg" alt="Estudante lendo um livro com elementos científicos ao redor">
   </div>
+  <div class="direita">
+    <form class="form-login">
+      <img class="logo" src="assets/Backpack.png" alt="Logo do Guia do Mochileiro Fatecano">
+      <h2>Guia do Mochileiro<br>Fatecano</h2>
+      <div class="grupo-formulario">
+        <p>E-mail</p>
+        <input placeholder="Digite seu e-mail">
+      </div>
+      <div class="grupo-formulario grupo-senha">
+        <p>Senha</p>
+        <div class="input-senha">
+          <input id="passwordInput" type="password" placeholder="Digite sua senha">
+          <span class="icone" (click)="togglePassword()">
+            <i id="togglePasswordIcon" class="bi bi-lock"></i>
+          </span>
+        </div>
+      </div>
+      <button type="submit">Entrar</button>
+      <div class="link-cadastro">
+        <span>Ainda não possui conta?</span><a routerLink="/register">Registre-se</a>
+      </div>
+    </form>
+  </div>
+</div>

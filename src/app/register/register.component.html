@@ -1,33 +1,37 @@
 <div class="container-cadastro">
-    <div class="imagem-esquerda">
+  <div class="imagem-esquerda">
       <img src="/assets/Register.svg" alt="Pessoa lendo um livro com livros ao redor">
-    </div>
-    <div class="form-direita">
-      <form class="form-cadastro">
-        <h2>Cadastre-se</h2>
-        <div class="grupo-formulario">
-            <p>Nome</p>
-          <input type="text" placeholder="Nome" required>
-        </div>
-        <div class="grupo-formulario">
-            <p>E-mail</p>
-          <input type="email" placeholder="E-mail" required>
-        </div>
-        <div class="grupo-formulario">
-          <span class="iconeX"><i class="fas fa-lock"></i></span>
-          <p>Senha</p>
-          <input type="password" placeholder="Senha" required>
-        </div>
-        <div class="grupo-formulario">
-          <span class="iconeY"><i class="fas fa-lock"></i></span>
-          <p>Confirmação de senha</p>
-          <input type="password" placeholder="Confirmação da senha" required>
-        </div>
-        <button type="submit">Cadastrar</button>
-        <div class="link-login">
-          <span>Possui conta?</span>
-          <a routerLink="/src/app/login/login.component.html">Entrar</a>
-        </div>
-      </form>
-    </div>
   </div>
+  <div class="form-direita">
+      <form class="form-cadastro">
+          <h2>Cadastre-se</h2>
+          <div class="grupo-formulario">
+              <p>Nome</p>
+              <input type="text" placeholder="Nome" required>
+          </div>
+          <div class="grupo-formulario">
+              <p>E-mail</p>
+              <input type="email" placeholder="E-mail" required>
+          </div>
+          <div class="grupo-formulario">
+              <span class="iconeX" (click)="togglePassword('passwordInput')">
+                  <i id="togglePasswordIcon1" class="bi bi-lock"></i>
+              </span>
+              <p>Senha</p>
+              <input id="passwordInput" type="password" placeholder="Senha" required>
+          </div>
+          <div class="grupo-formulario">
+              <span class="iconeY" (click)="togglePassword('confirmPasswordInput')">
+                  <i id="togglePasswordIcon2" class="bi bi-lock"></i>
+              </span>
+              <p>Confirmação de senha</p>
+              <input id="confirmPasswordInput" type="password" placeholder="Confirmação da senha" required>
+          </div>
+          <button type="submit">Cadastrar</button>
+          <div class="link-login">
+              <span>Possui conta?</span>
+              <a routerLink="/login">Entrar</a>
+          </div>
+      </form>
+  </div>
+</div>
