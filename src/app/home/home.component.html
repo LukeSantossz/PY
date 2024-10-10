@@ -1,0 +1,60 @@
+<!-- navbar.component.html -->
+<nav class="navbar navbar-expand-lg" id="nav-bar">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="/assets/BackpackLogo.svg" alt="Logo Mochila" class="logo">
+            <span class="logo-text">Guia do mochileiro <br><span class="fatecano-text">Fatecano</span></span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">
+                        <i class="bi bi-house-door icon"></i> Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="bi bi-bell icon"></i> Notificações
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="bi bi-book icon"></i> Matérias
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="bi bi-star icon"></i> Valores
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="bi bi-box-arrow-right icon"></i> Sair
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Conteúdo principal e cards -->
+<div class="container content">
+    <div class="title-subtitle">
+        <h1 class="title">Termos</h1>
+        <p class="subtitle">Qual termo gostaria de acessar hoje?</p>
+    </div>
+    <button class="btn add-class-btn">+ Adicionar turma</button>
+</div>
+
+<div class="container">
+    <div class="row justify-content-between">
+        <div class="col-md-3 mb-4" *ngFor="let term of terms; let i = index">
+            <div class="term-card" [ngStyle]="{'background-color': term.color}">
+                {{ term.name }}
+            </div>
+        </div>
+    </div>
+</div>
